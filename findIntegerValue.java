@@ -3,14 +3,14 @@ public class findIntegerValue {
 	public static void main(String[] args){
 		int divisor = 31; //change according to your divisor
 		int[] values = {5,7,11}; //You can change these value but cant change size of array.
-		
+		int maxSol = 5;
 		System.out.println("All possible values of a,b,c when " + divisor 
 + "|" + values[0]+"a + " + values[1]+"b +" + values[2]+"c");
-		findValues(divisor,values);
+		findValues(divisor,values,maxSol);
 	}
 
-	public static void findValues(int divisor, int[] values){
-		int maxSolutions = 5;
+	public static void findValues(int divisor, int[] values, int maxSolution){
+		int maxSolutions = maxSolution;
 		int[] result = new int[3];
 		int maximumMultiple = 10;
 		for(int i =0; i< maximumMultiple; i++)
