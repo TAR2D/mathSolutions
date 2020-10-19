@@ -7,7 +7,6 @@ public class DecimalToBase{
 	}
 
 	public static void decToBase(int decNumb, int base){
-		int result = out;
 		int remainder = decNumb % base;
 		int temp = decNumb/base;
 		if(decNumb != 0){
