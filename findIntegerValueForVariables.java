@@ -1,4 +1,4 @@
-public class findIntegerValue {
+public class findIntegerValueForVariables {
 	//Only valid when looking for 3 missing variables
 	public static void main(String[] args){
 		int divisor = 31; //change according to your divisor
