@@ -13,7 +13,6 @@ public class findIntegerValue {
 		int maxSolutions = 5;
 		int[] result = new int[3];
 		int maximumMultiple = 10;
-		if(maxSolutions > 0)
 		for(int i =0; i< maximumMultiple; i++)
 			for(int j =0; j< maximumMultiple; j++)
 				for(int k=0; k< maximumMultiple; k++){
@@ -21,6 +20,8 @@ public class findIntegerValue {
 						result[0] = i;
 						result[1] = j;
 						result[2] = k; 
+						if(maxSolutions < 0)
+							break;
 						maxSolutions--;
                           		 System.out.println("a ="+ i + " b = " + j + " c = "+ k );
   		                 	}	
